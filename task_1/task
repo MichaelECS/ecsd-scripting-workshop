@@ -1,0 +1,12 @@
+#!/bin/bash
+MYVAR="This is my var"
+echo $MYVAR
+
+MYBIGVAR="$MYVAR, and this is my var with \"'s in it"
+echo $MYBIGVAR
+
+echo "$1"
+
+touch That\'s\ All\ Folks.txt
+
+rm That\'s\ All\ Folks.txt
