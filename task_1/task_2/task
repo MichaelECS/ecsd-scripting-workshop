@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo $((78 % 8))
+
+ONE=$((4 ** 6))
+
+echo $ONE
+
+TWO=$((5 ** 3))
+
+echo $TWO
+
+echo $((4 ** 6)) $((5 ** 3))
+
+if [$ONE -eq $TWO]
+then
+	echo "SAME"
+else
+	echo "DIFFERENT"
+fi
