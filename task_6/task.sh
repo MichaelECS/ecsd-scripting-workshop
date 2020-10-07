@@ -1,16 +1,15 @@
 #!/bin/bash
 
 declare -a SENTENCE
-echo "Sentence:"
+echo "Give me a sentence:" 
 read -a SENTENCE
 
-echo "Replace:"
+echo "Replace which character:"
 read REPLACE
 
-echo "Replacement"
+echo "With what:"
 read REPLACEMENT
 
-for c in ${SENTENCE[@]}
-do
+SENTENCE=("${SENTENCE[@]//$REPLACE/$REPLACEMENT}")
 
-done
+echo ${SENTENCE[@]}
