@@ -1,0 +1,11 @@
+#!/bash/bin
+
+declare -a sites
+echo "Sites:"
+read -a sites
+
+for site in ${sites[@]}
+do
+	ping -c 5 $site
+done
+
